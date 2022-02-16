@@ -1,4 +1,4 @@
-export const BlutecoImg = [
+export const BluetecoImg = [
     {
       imageUrl:
         'https://morrodapedreira.com.br/wp-content/uploads/2021/09/Mesa-45-p3.jpg',
@@ -6,10 +6,6 @@ export const BlutecoImg = [
     {
       imageUrl:
         'https://gestaoderestaurantes.com.br/blog/wp-content/uploads/2017/05/31052017.jpg',
-    },
-    {
-      imageUrl:
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCXLNbTUTMDrFIen7OMaMyL2IOFPfetApQ5TYGIQgm-zfeZ6ndbBNggj6TbTFPTuFoTXE&usqp=CAU',
     },
     {
       imageUrl:

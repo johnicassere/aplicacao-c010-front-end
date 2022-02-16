@@ -20,6 +20,7 @@ export const NavBar = () => {
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/cadastrar">Cadastro</Nav.Link>
               <Nav.Link href="/login">Login</Nav.Link>
+              <Nav.Link href="/profile">Profile</Nav.Link>
               <Nav.Link href="/mesa">Mesa</Nav.Link>
             </Nav>
            </Container>

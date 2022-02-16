@@ -3,11 +3,18 @@ import ReactDOM from 'react-dom';
 import { NavBar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { Main } from './pages/Main';
-import { Login } from './pages/Login';
-import { Register } from './pages/Register';
-import { Mesa } from './components/Mesa';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Login } from './pages/Login/index';
+import { Register } from './pages/Register/Register';
+import { Mesa } from './pages/Mesa/index';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import axios from 'axios';
+import { Profile } from './pages/Profile';
+
+
+
+axios.defaults.baseURL = 'https://c010back.herokuapp.com/';
+axios.defaults.headers.post['Content-Type'] = 'application/json';
 
 
 ReactDOM.render(
@@ -18,6 +25,7 @@ ReactDOM.render(
             <Route path="/" element={<Main/>} />
             <Route path="/login" element={<Login/>} />
             <Route path="/cadastrar" element={<Register/>} />
+            <Route path="/profile" element={<Profile/>} />
             <Route path="/mesa" element={<Mesa/>} />
         </Routes>
       </BrowserRouter>
@@ -25,5 +33,3 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-
