@@ -1,4 +1,6 @@
 import axios from 'axios';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import {Form, Button, FormControl} from 'react-bootstrap';
 import styled from 'styled-components';
@@ -17,6 +19,7 @@ export const Register = () => {
     const [imagem, setImagem] = useState('');
     const [senha, setSenha] = useState('');
     const [confirmacaoSenha, setConfirmacaoSenha] = useState('');
+    const [on, setOn] = useState(false);
     
 
 const handleSubmit = (event) => {
@@ -31,7 +34,7 @@ const inputUser = {
     confirmacaoSenha: confirmacaoSenha,
 };
 
-console.log(inputUser);
+
 
 axios.post('/user', inputUser)
 .then((response) => {
@@ -46,6 +49,7 @@ axios.post('/user', inputUser)
         <>
         <FormS>
         <PageTitle>Cadastro</PageTitle>
+        
             <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
 
@@ -94,9 +98,11 @@ axios.post('/user', inputUser)
                 onChange={(event) => setConfirmacaoSenha(event.target.value)}
                 />
             </Form.Group>
-            <Button variant="success" type="submit">
+            <Link to="/">
+            <Button variant="success" type="submit" onClick={() => setOn(true)}>
                 Criar
             </Button>
+            </Link> 
             </Form>
             </FormS>
         </>

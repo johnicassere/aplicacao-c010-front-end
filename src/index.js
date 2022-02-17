@@ -6,6 +6,7 @@ import { Main } from './pages/Main';
 import { Login } from './pages/Login/index';
 import { Register } from './pages/Register/Register';
 import { Mesa } from './pages/Mesa/index';
+import { Review } from './pages/Review/Review'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
@@ -27,6 +28,7 @@ ReactDOM.render(
             <Route path="/cadastrar" element={<Register/>} />
             <Route path="/profile" element={<Profile/>} />
             <Route path="/mesa" element={<Mesa/>} />
+            <Route path="/view" element={<Review />} />
         </Routes>
       </BrowserRouter>
       <Footer/>

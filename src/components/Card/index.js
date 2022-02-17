@@ -3,9 +3,11 @@ import { Card } from 'react-bootstrap';
 
 
 export const CardS = styled(Card)`
-margin: -8rem;
 margin-top: 0rem;
-height: 25rem;
-width: 40rem;
-
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+width: 65rem;
+margin: 2px;
 `;

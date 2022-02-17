@@ -1,9 +1,10 @@
 import {Form, Button, FormControl} from 'react-bootstrap';
 import styled from 'styled-components';
 import { useState } from 'react';
-import axios from 'axios';
+import { Link } from 'react-router-dom';
 import { PageTitle } from '../../components/PageTitle';
 import { FormS } from '../../components/FormS';
+import axios from 'axios';
 
 
 
@@ -23,7 +24,7 @@ const handleSubmit = (event) =>{
         email,
         senha,
     };
-
+    console.log(inputLogin);
     axios.post('/auth', inputLogin)
     .then((response) => {
         const token = response.data.token;
@@ -33,7 +34,6 @@ const handleSubmit = (event) =>{
         console.log(error.message);
     });
 };
-
 
     return(
         <>
@@ -61,9 +61,12 @@ const handleSubmit = (event) =>{
                 />
             </Form.Group>
             
+            <Link to="/profile">
             <Button variant="success" type="submit">
                 Login
             </Button>
+            </Link>
+
             </Form>
             </FormS>
         </>

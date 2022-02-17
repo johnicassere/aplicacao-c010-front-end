@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Carousel } from "react-bootstrap";
 
 
 export const CardContainer = styled.div`

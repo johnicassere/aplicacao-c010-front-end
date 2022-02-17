@@ -52,8 +52,6 @@ return(
             <>
             <img src={user.imagem} roundedCircle/>
             <h2>{`${user.nome} ${user.sobreNome}`}</h2>
-            <h3>{user.birdthdate} </h3>
-            <p>{user.bio}</p>
             <span>{user.createdAt}</span>
             </>
         )}

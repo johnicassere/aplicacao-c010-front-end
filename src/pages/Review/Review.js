@@ -1,7 +1,23 @@
+import { PageTitle } from "../../components/PageTitle"
+import { FormS } from "../../components/FormS";
+
+
+
+
+
 export const Review = () => {
+
+    
+
+
     return(
         <>
-        <h1>Review</h1>
+        <FormS>
+        <PageTitle>Review</PageTitle>
+
+
+
+        </FormS>
         </>
     )
 }

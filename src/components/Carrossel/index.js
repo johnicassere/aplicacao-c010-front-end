@@ -10,15 +10,16 @@ width: 100%;
   }
   @media (max-width: 1024px) {
     height: 25rem;
+    
   }
   @media (max-width: 600px) {
-    height: 20rem;
+    height: 21rem;
   }
   @media (max-width: 480px) {
-    height: 16rem;
+    height: 18rem;
   }
   @media (max-width: 320px) {
-    height: 12rem;
+    height: 14rem;
   }
 
 `;
