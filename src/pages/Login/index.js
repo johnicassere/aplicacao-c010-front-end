@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { PageTitle } from '../../components/PageTitle';
 import { FormS } from '../../components/FormS';
 import axios from 'axios';
+import { setSelectionRange } from '@testing-library/user-event/dist/utils';
 
 
 
@@ -14,13 +15,17 @@ width: 30rem;
 
 export const Login = () => {
 
+const [msn, setMsn] = useState("Login");
 const [email, setEmail] = useState('');
 const [senha, setSenha] = useState('');
+const [id, setId] = useState('');
 
 const handleSubmit = (event) =>{
     event.preventDefault();
+    setMsn('Logando...')
 
     const inputLogin = {
+        id,
         email,
         senha,
     };
@@ -29,6 +34,7 @@ const handleSubmit = (event) =>{
     .then((response) => {
         const token = response.data.token;
         localStorage.setItem('token', token);
+        setId(id)
     })
     .catch((error) => {
         console.log(error.message);
@@ -38,7 +44,7 @@ const handleSubmit = (event) =>{
     return(
         <>
         <FormS>
-        <PageTitle>Login</PageTitle>
+        <PageTitle>{msn}</PageTitle>
             <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email:</Form.Label>
@@ -61,11 +67,11 @@ const handleSubmit = (event) =>{
                 />
             </Form.Group>
             
-            <Link to="/profile">
+            
             <Button variant="success" type="submit">
                 Login
             </Button>
-            </Link>
+            
 
             </Form>
             </FormS>

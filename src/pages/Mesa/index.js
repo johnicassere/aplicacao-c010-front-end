@@ -36,8 +36,9 @@ export const Mesa = () => {
 
         axios.post('/mesa', inputMesa)
         .then((response) => {
-            const token = response.data.token;
-            localStorage.setItem('token', token);
+           // const token = response.data.token;
+            //localStorage.setItem('token', token);
+            console.log(response)
 
         })
         .catch((error) => {

@@ -23,6 +23,8 @@ export const NavBar = () => {
               <Nav.Link href="/login">Login</Nav.Link>
               <Nav.Link href="/profile">Perfil</Nav.Link>
               <Nav.Link href="/mesa">Mesa</Nav.Link>
+              <Nav.Link href="/listusers">ListUsers</Nav.Link>
+              
             </Nav>
            </Container>
          </Navbar>

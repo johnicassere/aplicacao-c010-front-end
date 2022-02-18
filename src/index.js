@@ -8,9 +8,12 @@ import { Register } from './pages/Register/Register';
 import { Mesa } from './pages/Mesa/index';
 import { Review } from './pages/Review/Review'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Profile } from './pages/Profile';
+import { LogoUt } from './components/Logout/logout';
+import { ListUsers } from './pages/Login/ListUsers';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
-import { Profile } from './pages/Profile';
+
 
 
 
@@ -29,6 +32,8 @@ ReactDOM.render(
             <Route path="/profile" element={<Profile/>} />
             <Route path="/mesa" element={<Mesa/>} />
             <Route path="/view" element={<Review />} />
+            <Route path="/logout" element={<LogoUt />} />
+            <Route path="/listusers" element={<ListUsers />} />
         </Routes>
       </BrowserRouter>
       <Footer/>

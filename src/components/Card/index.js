@@ -8,6 +8,6 @@ display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
-width: 65rem;
+width: 45rem;
 margin: 2px;
 `;

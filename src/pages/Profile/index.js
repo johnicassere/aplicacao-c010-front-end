@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Container,Alert } from "react-bootstrap";
 import { PageTitle } from '../../components/PageTitle/index';
 import { FormS } from "../../components/FormS";
+import { LogoUt } from "../../components/Logout/logout";
 import axios from "axios";
 import styled from "styled-components";
 
@@ -60,7 +61,9 @@ return(
                 <Alert.Heading>Faça Login</Alert.Heading>
             </Alert>
         )}
+
     </ProfilArea>
+    <LogoUt/>
     </FormS>
    
 )
