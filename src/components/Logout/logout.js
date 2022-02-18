@@ -9,7 +9,7 @@ border-radius: 8px;
 border: solid 2px;
 font-size: 1.5rem;
 width: 9rem;
-height: 5rem;
+height: 3rem;
 `;
 
 export const LogoUt = () => {

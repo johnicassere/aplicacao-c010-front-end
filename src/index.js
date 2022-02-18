@@ -6,7 +6,6 @@ import { Main } from './pages/Main';
 import { Login } from './pages/Login/index';
 import { Register } from './pages/Register/Register';
 import { Mesa } from './pages/Mesa/index';
-import { Review } from './pages/Review/Review'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Profile } from './pages/Profile';
 import { LogoUt } from './components/Logout/logout';
@@ -31,7 +30,6 @@ ReactDOM.render(
             <Route path="/cadastrar" element={<Register/>} />
             <Route path="/profile" element={<Profile/>} />
             <Route path="/mesa" element={<Mesa/>} />
-            <Route path="/view" element={<Review />} />
             <Route path="/logout" element={<LogoUt />} />
             <Route path="/listusers" element={<ListUsers />} />
         </Routes>
