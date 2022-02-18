@@ -5,7 +5,7 @@ import { Carrossel } from '../../components/Carrossel';
 import { BluetecoImg } from '../../Api/Card';
 import { imgInfo } from '../../Api/Carrossel-slider';
 import { useState, useEffect } from 'react';
-import { CardContainer } from '../../components/CardContainer/inesx';
+import { CardContainer } from '../../components/CardContainer';
 import { CardS } from '../../components/Card';
 
 
